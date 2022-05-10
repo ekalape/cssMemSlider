@@ -26,8 +26,8 @@ main {
 }
 
 .slider {
-    width: 458px;
-    height: 325px;
+    width: 28.6rem;
+    height: 20.3rem;
     overflow: hidden;
 }
 
@@ -37,15 +37,20 @@ main {
 }
 
 img {
+    max-width: 100%;
     display: block;
     opacity: 0;
     transition: 0.5s;
 }
 
 .controls {
+    width: 100%;
     display: flex;
     padding: 1%;
-    align-self: flex-end;
+    align-self: center;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 2rem;
 }
 
 input {
@@ -76,6 +81,38 @@ label:hover,
     cursor: pointer;
 }
 
+.text {
+    align-self: flex-start;
+    margin: 4rem auto auto 0;
+    /* text-align: center; */
+    height: 5rem;
+}
+
+span {
+    display: block;
+    font-style: italic;
+    color: rgb(3, 3, 3);
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: 1.5s;
+}
+
+span#text_p2 {
+    transform: translateY(-100%);
+}
+
+span#text_p3 {
+    transform: translateY(-200%);
+}
+
+span#text_p4 {
+    transform: translateY(-300%);
+}
+
+span#text_p5 {
+    transform: translateY(-400%);
+}
+
 
 /* ----------------  p1 ----------------------- */
 
@@ -100,6 +137,11 @@ input#p1:not(:checked):hover~.slider~.controls>label>#circle_p1 {
 input#p1:not(:checked):active~.slider~.controls>label>#circle_p1 {
     box-shadow: 0 0 9px 3px white;
     background-color: transparent;
+}
+
+input#p1:checked~.slider~.controls>.text>#text_p1 {
+    opacity: 1;
+    color: white;
 }
 
 
@@ -128,6 +170,11 @@ input#p2:not(:checked):active~.slider~.controls>label>#circle_p2 {
     background-color: transparent;
 }
 
+input#p2:checked~.slider~.controls>.text>#text_p2 {
+    opacity: 1;
+    color: white;
+}
+
 
 /* ----------------  p3 ----------------------- */
 
@@ -152,6 +199,16 @@ input#p3:not(:checked):hover~.slider~.controls>label>#circle_p3 {
 input#p3:not(:checked):active~.slider~.controls>label>#circle_p3 {
     box-shadow: 0 0 9px 3px white;
     background-color: transparent;
+}
+
+input#p3:checked~.slider~.controls>.text>#text_p3 {
+    opacity: 1;
+    color: white;
+}
+
+input#p3:checked~.slider~.controls>.text>#text_p3 {
+    opacity: 1;
+    color: white;
 }
 
 
@@ -180,6 +237,11 @@ input#p4:not(:checked):active~.slider~.controls>label>#circle_p4 {
     background-color: transparent;
 }
 
+input#p4:checked~.slider~.controls>.text>#text_p4 {
+    opacity: 1;
+    color: white;
+}
+
 
 /* ----------------  p5 ----------------------- */
 
@@ -204,4 +266,9 @@ input#p5:not(:checked):hover~.slider~.controls>label>#circle_p5 {
 input#p5:not(:checked):active~.slider~.controls>label>#circle_p5 {
     box-shadow: 0 0 9px 3px white;
     background-color: transparent;
+}
+
+input#p5:checked~.slider~.controls>.text>#text_p5 {
+    opacity: 1;
+    color: white;
 }
