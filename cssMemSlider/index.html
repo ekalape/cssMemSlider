@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>MemSlider</title>
+    <title>Mem Slider</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="shortcut icon" href="assets/smile.ico" type="image/x-icon" />
     <meta name="author" content="Ekalape" />
     <link rel="stylesheet" href="style.css" />
@@ -14,24 +13,22 @@
   <body>
     <main>
       <div class="container">
-        <div class="slider"></div>
+        <div class="slider">
+          <img src="assets/bird.jpg" alt="bird" id="bird" />
+          <img src="assets/cat.jpg" alt="cat" id="cat" />
+          <img src="assets/choko.jpg" alt="chocolate" id="choko" />
+          <img src="assets/dino.jpg" alt="dino" id="dino" />
+          <img src="assets/mouse.jpg" alt="mouse" id="mouse" />
+        </div>
       </div>
       <div class="controls">
-        <div class="ch-box">
-          <input type="radio" name="pages" id="p1" checked />
-        </div>
-        <div class="ch-box">
-          <input type="radio" name="pages" id="p2" />
-        </div>
-        <div class="ch-box">
-          <input type="radio" name="pages" id="p3" />
-        </div>
-        <div class="ch-box">
-          <input type="radio" name="pages" id="p4" />
-        </div>
-        <div class="ch-box">
-          <input type="radio" name="pages" id="p5" />
-        </div>
+        <label for="p1"
+          ><input type="radio" name="pages" id="p1" checked
+        /></label>
+        <label for="p2"><input type="radio" name="pages" id="p2" /></label>
+        <label for="p3"> <input type="radio" name="pages" id="p3" /></label>
+        <label for="p4"> <input type="radio" name="pages" id="p4" /></label>
+        <label for="p5"> <input type="radio" name="pages" id="p5" /></label>
       </div>
       <div class="text"></div>
     </main>
