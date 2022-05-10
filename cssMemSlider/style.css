@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    max-width: 1200px;
+    width: 100%;
+    background-color: rgb(190, 190, 190);
+    margin: auto;
+}
+
+main {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    padding: 2%;
+    background-color: grey;
+    margin: auto;
+}
+
+.controls {
+    display: flex;
+    padding: 1%;
+}
+.ch-box{
+    width: 2.5rem;
+    height: 2.5rem;
+
+   /*  border:1px solid yellow; */
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+
+}
+.ch-box:hover{
+    cursor: pointer;
+}
+.controls input {
+    appearance: none;
+    width: 1rem;
+    height: 1rem;    
+   
+    border-radius: 50%;
+    background-color:white;
+    transition: 0.3s;
+}
+.ch-box:hover input:not(input:checked){
+    cursor:pointer;
+  /*   background-color:red; */
+    transform: scale(1.3);
+}
+.ch-box:active input:not(input:checked){
+    cursor:pointer;
+    transform: scale(0.8);
+}
+input:checked{
+    border: 2px solid white;
+    background-color:transparent;
+    outline: 2px solid white;
+}
+
+/* 
+
+.controls input:not(input:checked):hover {
+    background-color: black;
+    transform: scale(0.9);
+}
+
+.controls input:checked {
+    background-color: red;
+    user-select: none;
+    cursor: default;
+}
+
+.controls input:not(input:checked):active {
+    background-color: yellow;
+    transform: scale(1.2);
+} */
