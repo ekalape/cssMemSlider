@@ -12,8 +12,13 @@
 
   <body>
     <main>
-      <div class="container">
-        <div class="slider">
+      <input type="radio" name="pages" id="p1" checked />
+      <input type="radio" name="pages" id="p2" />
+      <input type="radio" name="pages" id="p3" />
+      <input type="radio" name="pages" id="p4" />
+      <input type="radio" name="pages" id="p5" />
+      <div class="slider">
+        <div class="container">
           <img src="assets/bird.jpg" alt="bird" id="bird" />
           <img src="assets/cat.jpg" alt="cat" id="cat" />
           <img src="assets/choko.jpg" alt="chocolate" id="choko" />
@@ -21,16 +26,21 @@
           <img src="assets/mouse.jpg" alt="mouse" id="mouse" />
         </div>
       </div>
+
       <div class="controls">
-        <label for="p1"
-          ><input type="radio" name="pages" id="p1" checked
-        /></label>
-        <label for="p2"><input type="radio" name="pages" id="p2" /></label>
-        <label for="p3"> <input type="radio" name="pages" id="p3" /></label>
-        <label for="p4"> <input type="radio" name="pages" id="p4" /></label>
-        <label for="p5"> <input type="radio" name="pages" id="p5" /></label>
+        <label for="p1"><div class="circle" id="circle_p1"></div></label>
+        <label for="p2"><div class="circle" id="circle_p2"></div></label>
+        <label for="p3"> <div class="circle" id="circle_p3"></div></label>
+        <label for="p4"><div class="circle" id="circle_p4"></div></label>
+        <label for="p5"> <div class="circle" id="circle_p5"></div></label>
       </div>
-      <div class="text"></div>
+      <div class="text">
+        <span id="text_p1"></span>
+        <span id="text_p2"></span>
+        <span id="text_p3"></span>
+        <span id="text_p4"></span>
+        <span id="text_p5"></span>
+      </div>
     </main>
   </body>
 </html>
