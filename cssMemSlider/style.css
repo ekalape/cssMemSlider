@@ -227,3 +227,110 @@ input#p5:checked~.slider>.container {
         box-shadow: 0 0 1rem 0.3rem white;
     }
 }
+
+
+/* ---------------------- media queries ---------------------------- */
+
+@media (max-width:46.2rem) {
+    input#p2:checked~.slider>.container {
+        transform: translateX(-105%)
+    }
+    input#p3:checked~.slider>.container {
+        transform: translateX(-210%)
+    }
+    input#p4:checked~.slider>.container {
+        transform: translateX(-315%)
+    }
+    input#p5:checked~.slider>.container {
+        transform: translateX(-420%)
+    }
+    span#text_p3 {
+        transform: translateY(-100%);
+    }
+    span#text_p4 {
+        transform: translateY(-400%);
+    }
+    span#text_p5 {
+        transform: translateY(-500%);
+    }
+}
+
+@media (max-width:38.8rem) {
+    img {
+        width: 25rem;
+        height: auto;
+    }
+    .slider {
+        width: 25rem;
+        height: auto;
+    }
+    .controls {
+        margin: 2rem auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .text {
+        margin: 1rem auto;
+        order: 2;
+    }
+    .control_buttons {
+        order: 1;
+    }
+    span {
+        text-align: center;
+    }
+    span#text_p3 {
+        transform: translateY(-200%);
+    }
+    span#text_p4 {
+        transform: translateY(-300%);
+    }
+    span#text_p5 {
+        transform: translateY(-400%);
+    }
+}
+
+@media (max-width:31.2rem) {
+    img {
+        width: 16rem;
+        height: auto;
+    }
+    .slider {
+        width: 16rem;
+        height: auto;
+    }
+    input#p2:checked~.slider>.container {
+        transform: translateX(-107%)
+    }
+    input#p3:checked~.slider>.container {
+        transform: translateX(-214%)
+    }
+    input#p4:checked~.slider>.container {
+        transform: translateX(-321%)
+    }
+    input#p5:checked~.slider>.container {
+        transform: translateX(-428%)
+    }
+    span#text_p3 {
+        transform: translateY(-100%);
+    }
+    span#text_p4 {
+        transform: translateY(-400%);
+    }
+    span#text_p5 {
+        transform: translateY(-500%);
+    }
+}
+
+@media (max-width:24.4rem) {
+    span#text_p3 {
+        transform: translateY(-100%);
+    }
+    span#text_p4 {
+        transform: translateY(-200%);
+    }
+    span#text_p5 {
+        transform: translateY(-600%);
+    }
+}
