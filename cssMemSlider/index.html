@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Mem Slider</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,39 +9,45 @@
     <link rel="shortcut icon" href="assets/smile.ico" type="image/x-icon" />
     <meta name="author" content="Ekalape" />
     <link rel="stylesheet" href="style.css" />
-  </head>
+</head>
 
-  <body>
+<body>
+    <header>
+        <h1>CSS Slider</h1>
+    </header>
     <main>
-      <input type="radio" name="pages" id="p1" checked />
-      <input type="radio" name="pages" id="p2" />
-      <input type="radio" name="pages" id="p3" />
-      <input type="radio" name="pages" id="p4" />
-      <input type="radio" name="pages" id="p5" />
-      <div class="slider">
-        <div class="container">
-          <img src="assets/bird.jpg" alt="bird" id="bird" />
-          <img src="assets/cat.jpg" alt="cat" id="cat" />
-          <img src="assets/choko.jpg" alt="chocolate" id="choko" />
-          <img src="assets/dino.jpg" alt="dino" id="dino" />
-          <img src="assets/mouse.jpg" alt="mouse" id="mouse" />
+        <input type="radio" name="pages" id="p1" checked />
+        <input type="radio" name="pages" id="p2" />
+        <input type="radio" name="pages" id="p3" />
+        <input type="radio" name="pages" id="p4" />
+        <input type="radio" name="pages" id="p5" />
+        <div class="slider">
+            <div class="container">
+                <img src="assets/bird.jpg" alt="bird" id="bird" />
+                <img src="assets/cat.jpg" alt="cat" id="cat" />
+                <img src="assets/choko.jpg" alt="chocolate" id="choko" />
+                <img src="assets/dino.jpg" alt="dino" id="dino" />
+                <img src="assets/mouse.jpg" alt="mouse" id="mouse" />
+            </div>
         </div>
-      </div>
 
-      <div class="controls">
-        <div class="text">
-          <span id="text_p1">Я слежу за тобой!</span>
-          <span id="text_p2">Котауэрский мост</span>
-          <span id="text_p3">Когда пробуешь самый дешевый шоколад</span>
-          <span id="text_p4">От чего вымерли тиранозавры</span>
-          <span id="text_p5">Ф - фотогеничность</span>
+        <div class="controls">
+            <div class="text">
+                <span id="text_p1">"Я слежу за тобой!"</span>
+                <span id="text_p2">"Котауэрский мост"</span>
+                <span id="text_p3">"Когда пробуешь самый дешевый шоколад"</span>
+                <span id="text_p4">"От чего вымерли тиранозавры"</span>
+                <span id="text_p5">"Ф - фотогеничность"</span>
+            </div>
+            <div class="control_buttons">
+                <label for="p1"><div class="circle" id="circle_p1"></div></label>
+                <label for="p2"><div class="circle" id="circle_p2"></div></label>
+                <label for="p3"> <div class="circle" id="circle_p3"></div></label>
+                <label for="p4"><div class="circle" id="circle_p4"></div></label>
+                <label for="p5"> <div class="circle" id="circle_p5"></div></label>
+            </div>
         </div>
-        <label for="p1"><div class="circle" id="circle_p1"></div></label>
-        <label for="p2"><div class="circle" id="circle_p2"></div></label>
-        <label for="p3"> <div class="circle" id="circle_p3"></div></label>
-        <label for="p4"><div class="circle" id="circle_p4"></div></label>
-        <label for="p5"> <div class="circle" id="circle_p5"></div></label>
-      </div>
     </main>
-  </body>
+</body>
+
 </html>
