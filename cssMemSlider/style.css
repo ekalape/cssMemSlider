@@ -52,7 +52,7 @@ main {
 }
 
 img {
-    width: 100%;
+    /*  width: 100%; */
     display: block;
     opacity: 0;
     transition: 0.5s;
@@ -186,28 +186,32 @@ input#p5:checked~.slider~.controls>.text>#text_p5 {
 /* ----------------  p2 ----------------------- */
 
 input#p2:checked~.slider>.container {
-    transform: translateX(-100%)
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-105%);
 }
 
 
 /* ----------------  p3 ----------------------- */
 
 input#p3:checked~.slider>.container {
-    transform: translateX(-200%)
+    transform: translateX(-200%);
+    -webkit-transform: translateX(-210%);
 }
 
 
 /* ----------------  p4 ----------------------- */
 
 input#p4:checked~.slider>.container {
-    transform: translateX(-300%)
+    transform: translateX(-300%);
+    -webkit-transform: translateX(-315%);
 }
 
 
 /* ----------------  p5 ----------------------- */
 
 input#p5:checked~.slider>.container {
-    transform: translateX(-400%)
+    transform: translateX(-400%);
+    -webkit-transform: translateX(-420%);
 }
 
 @keyframes clickControl {
